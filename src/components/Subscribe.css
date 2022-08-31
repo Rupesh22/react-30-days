@@ -1,0 +1,77 @@
+h1{
+    margin: 20px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.input-wrapper{
+    position: relative;
+    margin: 0px 8px;
+    width: 230px;
+}
+
+.subscribe-input{
+    height: 20px;
+    border-radius: 2px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    margin: 0px;
+    border: none;
+    width: -webkit-fill-available;
+}
+
+.subscribe-input:focus-visible{
+    outline-offset: 0px;
+    outline: none;
+}
+
+.input-underline{
+    border-bottom: 2px solid rgb(26,115,232);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 4px;
+    opacity: 0;
+    width: 0px;
+    transition: opacity 120ms ease-out, width 180ms linear 180ms;
+}
+
+#firstname:focus-visible ~.input-underline, #lastname:focus-visible ~.input-underline, #email:focus-visible ~.input-underline{
+    opacity: 1;
+    width: 100%;
+    transition: opacity 120ms ease-out, width 180ms linear;
+}
+
+#firstname:not(:focus-visible) ~.input-underline, #lastname:not(:focus-visible) ~.input-underline, #email:not(:focus-visible) ~.input-underline{
+    width: 0px;
+    transition: opacity 180ms ease-out, width 240ms linear;
+}
+
+.subscribe-button{
+    border-radius: 6px;
+    padding: 8px 0px;
+    padding-inline-start: 56px;
+    padding-inline-end: 56px;
+    margin: 20px 0px 0px 0px;
+    background-color: rgb(255, 116, 116);
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
