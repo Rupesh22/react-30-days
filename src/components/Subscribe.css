@@ -2,17 +2,22 @@ h1{
     margin: 20px;
 }
 
-p{
+.subscribe-text{
     margin-bottom: 10px;
 }
 
-.input-container{
+.form-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 12px;
     box-sizing: border-box;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
 }
 
 .input-wrapper{
@@ -74,4 +79,33 @@ p{
     font-weight: bold;
     color: white;
     border: none;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    h1{
+        margin: 0px;
+    }
+
+    .subscribe-text{
+        padding: 0px 24px;
+        text-align: center;
+    }
+
+    .form-container{
+        padding: 6px;
+    }
+
+    .input-container{
+        flex-direction: column;
+    }
+    
+    .input-wrapper{
+        margin: 12px 8px;
+        width: 230px;
+    }
+
+
 }

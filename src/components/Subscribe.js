@@ -26,9 +26,9 @@ const Subscribe = () => {
     return(
         <div style={subscribeContainer}>
             <h1>SUBSCRIBE</h1>
-            <p>Sign up with your email addresss to recieve news and updates</p>
-            <form className='input-container' onSubmit={handleSubscribe}>
-                <div style={{display: 'flex', flexDirection:'row'}}>
+            <p className='subscribe-text'>Sign up with your email addresss to recieve news and updates</p>
+            <form className='form-container' onSubmit={handleSubscribe}>
+                <div className='input-container'>
                     <div className='input-wrapper'>
                         <input 
                             type='text' id='firstname' value={firstname} required autoFocus className='subscribe-input' placeholder='First Name' onChange={(e)=>{setFirstname(e.target.value)}}
