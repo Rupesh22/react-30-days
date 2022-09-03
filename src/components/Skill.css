@@ -1,0 +1,67 @@
+.skill-bar-container{
+    box-sizing: border-box;
+    padding: 25px 20px;
+    padding-inline-start: 30px;
+}
+
+.skill-bar-wrapper{
+
+}
+
+.skill-bar-heading{
+    margin: 10px 10px 4px 10px;
+    text-align: center;
+}
+
+.skill-bar-sub-heading{
+    margin: 0px 4px 16px 4px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.skill-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 6px 0px;
+    margin: 3px;
+}
+
+.skill-bar-name{
+    width: 20%;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.skill-bar-graph-container{
+    width: 40%;
+    height: 14px;
+    background-color: none;
+    border-radius: 3px;
+    border: 1px solid rgb(235, 228, 228, 0.8);
+}
+
+.skill-bar-value{
+    width: 30%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .skill-bar{
+        width: 100%;
+    }
+    
+    .skill-bar-name{
+        width: 30%;
+    }
+    .skill-bar-value{
+        width: 20%;
+    }
+
+
+}

@@ -31,7 +31,7 @@ const Subscribe = () => {
                 <div className='input-container'>
                     <div className='input-wrapper'>
                         <input 
-                            type='text' id='firstname' value={firstname} required autoFocus className='subscribe-input' placeholder='First Name' onChange={(e)=>{setFirstname(e.target.value)}}
+                            type='text' id='firstname' value={firstname} required className='subscribe-input' placeholder='First Name' onChange={(e)=>{setFirstname(e.target.value)}}
                             onInvalid={(e)=>{e.target.setCustomValidity('first name field is required')}}
                             onInput={e => e.target.setCustomValidity('')}
                             maxLength='15'
