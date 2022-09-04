@@ -1,0 +1,53 @@
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.theme-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width:60px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #4d4d4d;
+    padding: 0px;
+}
+
+.moon:before {
+    content:"\1F31C";
+    font-size: x-large;
+}
+
+.sun:before {
+    content: "\1F31E";
+    font-size: x-large;
+}
+
+
+.theme-box{
+    height: 26px;
+    width: 26px;
+    border-radius: 11px;
+    position: absolute;
+    top: 1px;
+    background-color: white;
+    left: 1px;
+    z-index: 99;
+}
+
+.theme-box-left{
+    transform: translateX(0x);
+    transition: transform 0.2s cubic-bezier(0.42, 0.0, 1.0, 1.0);
+}
+
+.theme-box-right{
+    transform: translateX(30px);
+    transition: transform 0.2s cubic-bezier(0.42, 0.0, 1.0, 1.0);
+}
